@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    background:linear-gradient(#ff7a21, #a0a6e9);
+    height:92vh;
+}
+
+.contenerApp{
+    max-width:1080px;
+    margin:4rem auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenerApp .type-todo-contener{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenerApp .type-todo{
+    width: 50%;
+    border: none;
+    padding:.7rem 2rem ;
+}
+.contenerApp .send-todo{
+    width: 20%;
+    padding: .7rem ;
+    border: none;
+    background-color: brown;
+    text-align: center;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+.contenerApp .send-todo:hover{
+    box-shadow: 100px 0px  rgb(48, 20, 20) inset;
+}
+.contenerApp .todo-box{
+    width:80%;
+    height: 40px;
+    background-color: #fff;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding:.5rem 1rem;
+    align-items: center;
+    position: relative;
+}
+.contenerApp .todo-box-complet{
+text-decoration: line-through;
+}
+.btns{
+    width: 100%;
+}
+.btn{
+    width: 10%;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+}
+.Delete{
+    right:10%;
+    background-color:rgb(168, 0, 0);
+}
+.complet{
+background-color: green;
+}
